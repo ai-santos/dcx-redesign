@@ -9,7 +9,7 @@ const server = express()
 
 //view engine setup
 server.set('views', path.join(__dirname, 'views'))
-
+server.set('view engine', 'pug')
 
 //middleware
 server.use(logger('dev'))
