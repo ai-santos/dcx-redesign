@@ -1,0 +1,19 @@
+{
+  "name": "dcx-redesign",
+  "version": "1.0.0",
+  "description": "redesign dapper clothing exchange website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asantos3026/dcx-redesign.git"
+  },
+  "author": "aileen santos, phil lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asantos3026/dcx-redesign/issues"
+  },
+  "homepage": "https://github.com/asantos3026/dcx-redesign#readme"
+}
