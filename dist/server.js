@@ -30,6 +30,7 @@ var server = (0, _express2.default)();
 
 //view engine setup
 server.set('views', _path2.default.join(__dirname, 'views'));
+server.set('view engine', 'pug');
 
 //middleware
 server.use((0, _morgan2.default)('dev'));
