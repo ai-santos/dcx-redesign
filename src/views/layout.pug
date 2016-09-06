@@ -5,6 +5,7 @@ html(lang='en')
 		meta(charset='utf-8')
 		// custom styles
 		link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway')
 		title Dapper Clothing Exchange
 		meta(name='generator', content='Bootply')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
@@ -13,12 +14,12 @@ html(lang='en')
 	body
 		header
 			nav(role='navigation')
-				ul
-					li
+				ul.header-ul
+					li.header-links
 						a(href='/')
 							div
 								| Home
-					li
+					li.header-links
 						a(href='/about')
 							div
 							| About
@@ -26,11 +27,11 @@ html(lang='en')
 								ul
 									li
 										a(href='#') About Us
-					li
+					li.header-links
 						a(href='/gallery')
 							div
 							| Gallery
-					li
+					li.header-links
 						a(href='/contact')
 							div
 								| Contact
