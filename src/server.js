@@ -4,6 +4,7 @@ import path from 'path'
 import bodyParser from 'body-parser'
 import cookieSession from 'cookie-session'
 import logger from 'morgan'
+import pug from 'pug'
 
 const server = express()
 
@@ -13,8 +14,10 @@ server.set('view engine', 'pug')
 
 //middleware
 server.use(logger('dev'))
-server.use(express.static(__dirname+'/views'))
-server.use(bodyParser.urlencoded({ extended: true }))
+server.use(express.static(__dirname + '/public'))
+server.use(bodyParser.urlencoded({
+  extended: true
+}))
 
 //routes
 server.use('/', routes)
