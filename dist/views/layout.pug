@@ -3,9 +3,12 @@ html(lang='en')
 	head
 		meta(http-equiv='content-type', content='text/html; charset=UTF-8')
 		meta(charset='utf-8')
-		// custom styles
 		link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway')
+		link(href='http://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(type='text/css', rel='stylesheet', href='stylesheets/materialize.css', media='screen,projection')
+		// Let browser know website is optimized for mobile
+
 		title Dapper Clothing Exchange
 		meta(name='generator', content='Bootply')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
@@ -13,7 +16,7 @@ html(lang='en')
 			script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
 	body
 		header
-			nav(role='navigation')
+			nav(id='nav')
 				ul.header-ul
 					li.header-links
 						a(href='/')
@@ -36,6 +39,7 @@ html(lang='en')
 							div
 								| Contact
 
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
+		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
+		script(type='text/javascript', src='scripts/materialize.js')
 		script(src='scripts/app.js')
 		block content
