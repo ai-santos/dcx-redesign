@@ -56,6 +56,14 @@ body {
 
 /*NAV*/
 
+#nav {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
 header {
     background: linear-gradient(to left, rgba(54, 194, 182, 0) 0, rgba(62, 188, 207, 0) 100%);
     border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -152,5 +160,24 @@ header>nav>ul>li>a:hover {
 }
 
 .page-content {
-  padding: 100px;
+  position: relative;
+  z-index: 1;
+  padding-top: 115px;
 }
+
+.parallax-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
