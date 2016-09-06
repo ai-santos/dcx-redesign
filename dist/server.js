@@ -24,6 +24,10 @@ var _morgan = require('morgan');
 
 var _morgan2 = _interopRequireDefault(_morgan);
 
+var _pug = require('pug');
+
+var _pug2 = _interopRequireDefault(_pug);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var server = (0, _express2.default)();
@@ -34,8 +38,10 @@ server.set('view engine', 'pug');
 
 //middleware
 server.use((0, _morgan2.default)('dev'));
-server.use(_express2.default.static(__dirname + '/views'));
-server.use(_bodyParser2.default.urlencoded({ extended: true }));
+server.use(_express2.default.static(__dirname + '/public'));
+server.use(_bodyParser2.default.urlencoded({
+  extended: true
+}));
 
 //routes
 server.use('/', _routes2.default);
