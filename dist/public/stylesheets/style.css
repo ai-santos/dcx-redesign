@@ -166,6 +166,22 @@ header>nav>ul>li>a:hover {
   padding: 3em;
 }
 
+.text-fade-in {
+  color: #fff;
+  opacity: 0;
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+.text-fade-in-left {
+  color: black;
+  opacity: 0;
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+}
+
 .parallax-section {
   height: 600px;
   background-repeat: no-repeat;
@@ -257,6 +273,4 @@ body.about-page {
 
 .typing-text > li > span {
   visibility: hidden;
-  
-  
 }

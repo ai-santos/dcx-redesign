@@ -160,3 +160,18 @@ $(function () {
 
   tick();
 });
+
+$(function () {
+
+  $('.text-fade-in').delay(700).animate({ opacity: 1 }, 1000);
+});
+
+$(function () {
+
+  $('.text-fade-in-left', function () {
+    $('.text-fade-in-left').animate({
+      left: '+=355px',
+      opacity: '1'
+    }, 2000);
+  });
+});
