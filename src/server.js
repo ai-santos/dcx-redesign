@@ -19,6 +19,11 @@ server.use(bodyParser.urlencoded({
   extended: true
 }))
 
+server.use(function(request, response, next){
+  response.locals.bodyClass = ''
+  next()
+})
+
 //routes
 server.use('/', routes)
 

@@ -1,6 +1,22 @@
-$(() => {
-  // $('.parallax').parallax();
+const parallaxElements = [];
+const windowHeight = 0;
 
+$(() => {
+//parallax
+  windowHeight = $(window).height();
+  $('html, body').scrollTop(1);
+
+$(window)
+  .bind('scroll', function(e){
+    let val = e.currentTarget.scrollY;
+    parallax(val);
+  })
+
+
+
+
+
+//CAROUSEL
   const isBefore = function(index, visibleCells, cellsLength){
     let beforeFirstIndex = visibleCells[0]-1
     if (beforeFirstIndex < 0) beforeFirstIndex += cellsLength

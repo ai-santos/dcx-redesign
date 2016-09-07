@@ -161,22 +161,52 @@ header>nav>ul>li>a:hover {
     }
 }
 
+.white-box {
+  background-color: #fff;
+  padding: 3em;
+}
+
+.parallax-section {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+  position: relative;
+}
+
+.parallax-image-first {
+  background-image: url('http://i.imgur.com/Dt5czWh.jpg');
+}
+
+.parallax-image-second {
+  background-image: url('http://i.imgur.com/Z4ZpcJ1.jpg');
+}
+
+.paragraph-content {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+body.about-page {
+  background-image: url('/images/dapperclothing.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
+}
+
 .page-content {
   position: relative;
   z-index: 1;
   padding-top: 115px;
 }
-
-.parallax-background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-
 
 .gallery{
   background-color: black;
