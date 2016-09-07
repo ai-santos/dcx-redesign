@@ -1,3 +1,46 @@
+/*fonts*/
+@font-face {
+    font-family: 'ralewayitalic';
+    src: url('raleway-italic-webfont.woff2') format('woff2'),
+         url('raleway-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand-BoldItalic';
+    src: url('fonts/Quicksand-BoldItalic.otf') format('woff2'),
+         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -49,25 +92,27 @@ body {
 
 /*NAV*/
 
-#nav {
+/*#nav {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.87);
     width: 100%;
     height: 56px;
     line-height: 56px;
 }
+*/
+
 
 header {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 header > nav {
   background: linear-gradient(to left, rgba(54, 194, 182, 0) 0, rgba(62, 188, 207, 0) 100%);
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
 }
 
 header > nav, main {
@@ -132,7 +177,6 @@ header > nav, main {
 .header-links a+div>ul>li:hover>a {
     background-color: rgba(255, 255, 255, .15);
     color: black;
-
 }
 
 header>nav>ul>li>a {
@@ -166,8 +210,77 @@ header>nav>ul>li>a:hover {
   padding: 3em;
 }
 
-.parallax-section {
-  height: 600px;
+.page-content{
+  position: relative;
+  z-index: 1;
+  padding-top: 115px;
+}
+
+
+section.motto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #fff;
+}
+
+section.whyVFix {
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  background-image: url("/images/dcx-clothing2.jpg");
+  background-repeat: no-repeat;
+}
+
+section.dapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url("/images/dcx-community.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parallax-background{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.flexbox-grid {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  opacity: 1;
+  background-color: #212121;
+}
+
+.flexbox-grid * {
+  text-align: center;
+}
+
+
+.service-item {
+  padding-right: 50px;
+}
+
+
+.page-content{
+  position: relative;
+  z-index: 1;
+  padding-top: 115px;
+}
+
+/*.parallax-section {
+  height: 800px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -176,12 +289,16 @@ header>nav>ul>li>a:hover {
 }
 
 .parallax-image-first {
-  background-image: url('http://i.imgur.com/Dt5czWh.jpg');
+  background-image: url('/images/dapperclothing.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .parallax-image-second {
-  background-image: url('http://i.imgur.com/Z4ZpcJ1.jpg');
-}
+  background-image: url('/images/dcx-community.jpg');
+}*/
 
 .paragraph-content {
   font-size: 60px;
