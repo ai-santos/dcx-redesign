@@ -7,7 +7,9 @@ router.get('/', (request, response) => {
 })
 
 router.get('/about', (request, response) => {
-  response.render('about', {})
+  response.render('about', {
+    bodyClass: 'about-page'
+  })
 })
 
 router.get('/gallery', (request, response) => {

@@ -3,8 +3,8 @@
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 $(function () {
-  // $('.parallax').parallax();
 
+  //CAROUSEL
   var isBefore = function isBefore(index, visibleCells, cellsLength) {
     var beforeFirstIndex = visibleCells[0] - 1;
     if (beforeFirstIndex < 0) beforeFirstIndex += cellsLength;
@@ -122,58 +122,41 @@ $(function () {
   };
 
   initializeGallery();
+});
 
-  // $('.gallery-filmstrip > *:nth-child(1)').addClass('img-1')
-  // $('.gallery-filmstrip > *:nth-child(2)').addClass('img-2')
-  // $('.gallery-filmstrip > *:nth-child(3)').addClass('img-3')
-  // $('.gallery-filmstrip > *:nth-child(4)').addClass('img-4')
-  // $('.gallery-filmstrip > *:nth-child(5)').addClass('img-5')
-  //
-  // $('.gallery-filmstrip > *').on('click', function(event) {
-  //   event.preventDefault();
-  //   var cell = $(this);
-  //   var filmstrip = cell.parent();
-  //   if (cell.is('.img-1')) {
-  //     cell
-  //       .removeClass('img-1').addClass('img-2')
-  //       .next().removeClass('img-2').addClass('img-3')
-  //       .next().removeClass('img-3').addClass('img-4')
-  //       .next().removeClass('img-4').addClass('img-5')
-  //       .next().removeClass('img-5').addClass('img-right-hidden')
-  //   }
-  //   if (cell.is('.img-2')) {
-  //     cell.prev()
-  //       .removeClass('img-1').addClass('img-2')
-  //       .next().removeClass('img-2').addClass('img-3')
-  //       .next().removeClass('img-3').addClass('img-4')
-  //       .next().removeClass('img-4').addClass('img-5')
-  //       .next().removeClass('img-5').addClass('img-right-hidden')
-  //   }
-  //   // if (cell.is('.img-3')) {}
-  //   if (cell.is('.img-4')) {
-  //     cell.prev().prev().prev()
-  //       .removeClass('img-1').addClass('img-left-hidden')
-  //       .next().removeClass('img-2').addClass('img-1')
-  //       .next().removeClass('img-3').addClass('img-2')
-  //       .next().removeClass('img-4').addClass('img-3')
-  //       .next().removeClass('img-5').addClass('img-4')
-  //       .next()
-  //         .removeClass('img-right-hidden')
-  //         .removeClass('img-left-hidden')
-  //         .addClass('img-5')
-  //   }
-  //   if (cell.is('.img-5')) {
-  //     cell.prev().prev().prev().prev()
-  //       .removeClass('img-1').addClass('img-2')
-  //       .next().removeClass('img-2').addClass('img-3')
-  //       .next().removeClass('img-3').addClass('img-4')
-  //       .next().removeClass('img-4').addClass('img-5')
-  //       .next().removeClass('img-5').addClass('img-right-hidden')
-  //   }
-  // })
+$(function () {
 
-  //
-  // });
-  // })
+  var humanizedTimeout = function humanizedTimeout() {
+    var max = 200,
+        min = 50;
+    return Math.random() * (max - min) + min;
+  };
 
+  var spans = $('.typing-text > li > span');
+  spans.each(function () {
+    var span = $(this);
+    span.data('text', span.text());
+    span.text('').css({ 'visibility': 'visible' });
+  });
+
+  var tick = function tick() {
+    console.log('TICK!');
+    var incompleteSpans = spans.filter(function () {
+      var span = $(this);
+      var currentText = span.text();
+      var intendedText = span.data('text');
+      return currentText !== intendedText;
+    });
+
+    if (incompleteSpans.length === 0) return;
+
+    var span = incompleteSpans.first();
+    var currentText = span.text();
+    var intendedText = span.data('text');
+    var nextChar = intendedText.replace(currentText, '')[0];
+    span.text(currentText + nextChar);
+    setTimeout(tick, humanizedTimeout());
+  };
+
+  tick();
 });

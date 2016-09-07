@@ -13,7 +13,9 @@ router.get('/', function (request, response) {
 });
 
 router.get('/about', function (request, response) {
-  response.render('about', {});
+  response.render('about', {
+    bodyClass: 'about-page'
+  });
 });
 
 router.get('/gallery', function (request, response) {

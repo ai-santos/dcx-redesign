@@ -43,6 +43,11 @@ server.use(_bodyParser2.default.urlencoded({
   extended: true
 }));
 
+server.use(function (request, response, next) {
+  response.locals.bodyClass = '';
+  next();
+});
+
 //routes
 server.use('/', _routes2.default);
 
