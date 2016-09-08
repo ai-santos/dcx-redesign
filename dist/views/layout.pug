@@ -15,6 +15,7 @@ html(lang='en')
 		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
 		script(src='scripts/app.js')
 	body(class=bodyClass)
+
 		div
 			.parallax-background
 				img(src="/images/dapperclothing.jpg")
@@ -44,9 +45,15 @@ html(lang='en')
 									div
 									| Gallery
 							li.header-links
-								a(href='/contact')
+								a(href='#contactModal') 
 									div
 										| Contact
-
-				main
-					block content
+	#contactModal.modalDialog
+		div
+			a.close(href='#close', title='Close') X
+			h2 Modal Box
+			p This is a sample modal box that can be created using the powers of CSS3.
+			p
+			| You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.
+		main
+		block content
