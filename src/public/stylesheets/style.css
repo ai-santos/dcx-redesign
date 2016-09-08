@@ -113,7 +113,7 @@ h1 {
 
 h2.about-title {
   font-family: 'great_vibesregular';
-  font-size: 30px;
+  font-size: 50px;
 }
 
 section.about-section {
@@ -445,7 +445,23 @@ header>nav>ul>li>a:hover {
   transition: left 2s, opacity 2s;
 }
 
+.text-fade-in-left-add {
+  font-family: 'ralewayregular';
+  font-size: 30px;
+  color: black;
+  text-align: left;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: left 2s, opacity 2s;
+}
+
 .text-fade-in-left-go {
+  left: 0;
+  opacity: 1;
+}
+
+.text-fade-in-left-add-go {
   left: 0;
   opacity: 1;
 }

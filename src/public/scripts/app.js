@@ -193,3 +193,9 @@ $(() => {
   $('.text-fade-in-left').addClass('text-fade-in-left-go')
 
 })
+
+$(() => {
+
+  $('.text-fade-in-left-add').addClass('text-fade-in-left-add-go')
+
+})
