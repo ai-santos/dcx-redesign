@@ -15,11 +15,13 @@ html(lang='en')
 		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
 		script(src='scripts/app.js')
 	body(class=bodyClass)
+
 		div
 			.parallax-background
 				img(src="/images/dapperclothing.jpg")
 		div
 			.page-content
+
 				header(class="fixed")
 					nav(id='nav').overlay
 						ul.header-ul
@@ -44,9 +46,24 @@ html(lang='en')
 									div
 									| Gallery
 							li.header-links
-								a(href='/contact')
+								a(href='#text') 
 									div
-										| Contact
+										| Connect
+
+				#text.lightbox
+					.box
+						a.close(href='#') X
+						p.title
+							h4 My Title
+						.content
+							form(role='form', novalidate='')
+								label(for='inpEmail') Email address
+									input#inpEmail(type='email', placeholder='Enter email')
+								label(for='inpEmail') Email address
+									input#inpEmail(type='email', placeholder='Enter email')
+								label(for='inpEmail') Email address
+									input#inpEmail(type='email', placeholder='Enter email')
+
 
 				main
-					block content
+				block content
