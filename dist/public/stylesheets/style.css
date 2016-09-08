@@ -328,7 +328,6 @@ header>nav>ul>li>a:hover {
   color: #fff;
   opacity: 0;
   text-align: center;
-
 }
 
 .text-fade-in-and-out {
@@ -436,48 +435,6 @@ section.dapper {
 .service-item {
   padding-right: 50px;
 }
-
-
-/*.parallax-section {
-  height: 800px;
-=======
-.text-fade-in {
-  color: #fff;
-  opacity: 0;
-  font-size: 28px;
-  margin-top: 20px;
-  text-align: center;
-}
-.text-fade-in-left {
-  color: black;
-  opacity: 0;
-  font-size: 28px;
-  margin-top: 20px;
-  text-align: left;
-  position: relative;
-}
-
-.parallax-section {
-  height: 600px;
->>>>>>> text_fade_in
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 100% auto;
-  position: relative;
-}
-
-.parallax-image-first {
-  background-image: url('/images/dapperclothing.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-.parallax-image-second {
-  background-image: url('/images/dcx-community.jpg');
-}*/
 
 .paragraph-content {
   font-size: 60px;
