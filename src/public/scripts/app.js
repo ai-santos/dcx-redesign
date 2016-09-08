@@ -172,7 +172,7 @@ $(() => {
 
   $('.text-fade-in-left', function () {
     $('.text-fade-in-left').animate({
-      left: '+=355px',
+      left: '+=480px',
       opacity: '1'
     }, 2000)
   })

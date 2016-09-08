@@ -210,6 +210,21 @@ header>nav>ul>li>a:hover {
   padding: 3em;
 }
 
+.text-fade-in {
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+
+}
+
+.text-fade-in-left {
+  color: black;
+  position: relative;
+  margin-left: auto;
+  opacity: 0.3;
+}
+
+
 .page-content{
   position: relative;
   z-index: 1;
