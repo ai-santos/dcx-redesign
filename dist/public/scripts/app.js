@@ -187,6 +187,6 @@ $(function () {
 });
 
 $(function () {
+
   $('.text-fade-in-left').addClass('text-fade-in-left-go');
-  console.log('addClass');
 });
