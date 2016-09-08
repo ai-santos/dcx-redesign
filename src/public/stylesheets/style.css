@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'ralewaylight';
-    src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('fonts/raleway-light-webfont.woff') format('woff');
+    src: url('/fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('/fonts/raleway-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,24 +19,24 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('fonts/raleway-regular-webfont.woff') format('woff');
+    src: url('/fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('/fonts/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Quicksand-BoldItalic';
-    src: url('fonts/Quicksand-BoldItalic.otf') format('woff2'),
-         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    src: url('/fonts/Quicksand-BoldItalic.otf') format('woff2'),
+         url('/fonts/greatvibes-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'great_vibesregular';
-    src: url('fonts/greatvibes-regular-webfont.woff2') format('woff2'),
-         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    src: url('/fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('/fonts/greatvibes-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -101,6 +101,11 @@ body {
 }
 */
 
+h1 {
+  font-family: 'great_vibesregular';
+  font-size: 75px;
+  color: white;
+}
 
 header {
   display: block;
@@ -231,6 +236,11 @@ header>nav>ul>li>a:hover {
   padding-top: 115px;
 }
 
+.fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+}
 
 section.motto {
   display: flex;
@@ -259,6 +269,12 @@ section.dapper {
   background-repeat: no-repeat;
 }
 
+.page-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 115px;
+}
+
 .parallax-background{
   position: fixed;
   top: 0;
@@ -267,6 +283,11 @@ section.dapper {
   left: 0;
 }
 
+.parallax-background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 .flexbox-grid {
   display: flex;
@@ -274,7 +295,7 @@ section.dapper {
   justify-content: center;
   align-items: center;
   height: 500px;
-  opacity: 1;
+  opacity: .8;
   background-color: #212121;
 }
 
