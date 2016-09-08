@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'ralewaylight';
-    src: url('fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('fonts/raleway-light-webfont.woff') format('woff');
+    src: url('/fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('/fonts/raleway-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,24 +19,24 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('fonts/raleway-regular-webfont.woff') format('woff');
+    src: url('/fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('/fonts/raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Quicksand-BoldItalic';
-    src: url('fonts/Quicksand-BoldItalic.otf') format('woff2'),
-         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    src: url('/fonts/Quicksand-BoldItalic.otf') format('woff2'),
+         url('/fonts/greatvibes-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'great_vibesregular';
-    src: url('fonts/greatvibes-regular-webfont.woff2') format('woff2'),
-         url('fonts/greatvibes-regular-webfont.woff') format('woff');
+    src: url('/fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('/fonts/greatvibes-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -101,6 +101,22 @@ body {
 }
 */
 
+h1 {
+  font-family: 'great_vibesregular';
+  font-size: 75px;
+  color: white;
+}
+
+.about-title {
+  font-family: 'great_vibesregular';
+  font-size: 60px;
+}
+
+.about-content {
+  font-family: 'ralewayregular';
+  font-size: 20px;
+  font-weight: bold;
+}
 
 header {
   display: block;
@@ -115,10 +131,10 @@ header > nav {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
 }
 
-header > nav, main {
+/*header > nav, main {
   max-width: 1200px;
   margin: 0 auto;
-}
+}*/
 
 
 .header-ul {
@@ -205,9 +221,23 @@ header>nav>ul>li>a:hover {
     }
 }
 
+.video-container {
+  margin-top: 50px;
+  padding-top: 10px;
+  height: 500px;
+  text-align: center;
+  background-color: #212121;
+}
+
+.clear-list {
+  list-style: none;
+  padding-top: 20px;
+}
+
 .white-box {
+  height: 400px;
   background-color: #fff;
-  padding: 3em;
+  text-align: center;
 }
 
 .text-fade-in {
@@ -228,9 +258,14 @@ header>nav>ul>li>a:hover {
 .page-content{
   position: relative;
   z-index: 1;
-  padding-top: 115px;
+  padding-top: 50px;
 }
 
+.fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+}
 
 section.motto {
   display: flex;
@@ -259,6 +294,7 @@ section.dapper {
   background-repeat: no-repeat;
 }
 
+
 .parallax-background{
   position: fixed;
   top: 0;
@@ -267,6 +303,11 @@ section.dapper {
   left: 0;
 }
 
+.parallax-background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 .flexbox-grid {
   display: flex;
@@ -274,7 +315,7 @@ section.dapper {
   justify-content: center;
   align-items: center;
   height: 500px;
-  opacity: 1;
+  opacity: .8;
   background-color: #212121;
 }
 
@@ -287,12 +328,6 @@ section.dapper {
   padding-right: 50px;
 }
 
-
-.page-content{
-  position: relative;
-  z-index: 1;
-  padding-top: 115px;
-}
 
 /*.parallax-section {
   height: 800px;
@@ -352,12 +387,6 @@ body.about-page {
   background-attachment: fixed;
   background-size: cover;
   background-position: 100% auto;
-}
-
-.page-content {
-  position: relative;
-  z-index: 1;
-  padding-top: 115px;
 }
 
 .gallery{

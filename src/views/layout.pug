@@ -15,29 +15,38 @@ html(lang='en')
 		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
 		script(src='scripts/app.js')
 	body(class=bodyClass)
-		header
-			nav(id='nav').overlay
-				ul.header-ul
-					li.header-links
-						a(href='/')
-							div
-								| Home
-					li.header-links
-						a(href='/about')
-							div
-							| About
-							div
-								ul
-									li
-										a(href='#') About Us
-					li.header-links
-						a(href='/gallery')
-							div
-							| Gallery
-					li.header-links
-						a(href='/contact')
-							div
-								| Contact
+		div
+			.parallax-background
+				img(src="/images/dapperclothing.jpg")
+		div
+			.page-content
+				header(class="fixed")
+					nav(id='nav').overlay
+						ul.header-ul
+							li.header-links
+								a(href='/')
+									div
+										| Home
+							li.header-links
+								a(href='/about')
+									div
+									| About
+									div
+										ul
+											li
+												a(href='#') SpringXchange
+											li
+												a(href='#') The Crew
+											li
+												a(href='#') How It Works
+							li.header-links
+								a(href='/gallery')
+									div
+									| Gallery
+							li.header-links
+								a(href='/contact')
+									div
+										| Contact
 
-		main
-			block content
+				main
+					block content

@@ -127,8 +127,8 @@ $(function () {
 $(function () {
 
   var humanizedTimeout = function humanizedTimeout() {
-    var max = 200,
-        min = 50;
+    var max = 100,
+        min = 40;
     return Math.random() * (max - min) + min;
   };
 
