@@ -281,6 +281,26 @@ section.dapper {
 
 /*.parallax-section {
   height: 800px;
+=======
+.text-fade-in {
+  color: #fff;
+  opacity: 0;
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+.text-fade-in-left {
+  color: black;
+  opacity: 0;
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.parallax-section {
+  height: 600px;
+>>>>>>> text_fade_in
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -374,6 +394,4 @@ body.about-page {
 
 .typing-text > li > span {
   visibility: hidden;
-  
-  
 }
