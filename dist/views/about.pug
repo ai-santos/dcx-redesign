@@ -3,6 +3,12 @@ extends ./layout
 block content
 
 	section
+		.text-fade-in-left
+				| Check The Video 
+		.video-container
+			video(src='/videos/DCX.mp4' controls)
+				
+	section
 		.white-box
 			h2.about-title How It Works
 			ul.typing-text
@@ -18,7 +24,6 @@ block content
 					span.about-content 5. Take pictures and walk the run way with your threads.
 				li.clear-list
 					span.about-content 6. Eat, drink, and chop it up some more.
-
 	section
 		.flexbox-grid
 			.text-fade-in
@@ -26,8 +31,4 @@ block content
 					span 
 						h2.about-title The Crew
 
-		.white-box
-			.text-fade-in-left
-				.center
-				| Check The Video 
-			video(src='/videos/DCX.mp4' controls)
+

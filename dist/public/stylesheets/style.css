@@ -221,6 +221,13 @@ header>nav>ul>li>a:hover {
     }
 }
 
+.video-container {
+  margin-top: 50px;
+  height: 500px;
+  text-align: center;
+  background-color: #212121;
+}
+
 .clear-list {
   list-style: none;
   padding-top: 20px;
