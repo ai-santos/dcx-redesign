@@ -162,16 +162,31 @@ $(function () {
 });
 
 $(function () {
+  var detectSectionScrollIn = function detectSectionScrollIn(event) {
+    var section = $('section.about-section');
+    var offsetTop = section.offset().top - $(window).height() / 2;
+    if (window.scrollY >= offsetTop) {
+      section.find('> .about-section-text').css({ opacity: 0 });
+      section.find('> .about-section-background').css({ opacity: 1 });
+      $(window).off('scroll', detectSectionScrollIn);
+    }
+  };
+  $(window).on('scroll', detectSectionScrollIn);
+
+  detectSectionScrollIn();
+  //
 
   $('.text-fade-in').delay(700).animate({ opacity: 1 }, 1000);
 });
 
 $(function () {
 
-  $('.text-fade-in-left', function () {
-    $('.text-fade-in-left').animate({
-      left: '+=480px',
-      opacity: '1'
-    }, 2000);
+  $('.text-fade-in-and-out').fadeIn(3000, function () {
+    $('.text-fade-in-and-out').fadeOut(5000);
   });
+});
+
+$(function () {
+
+  $('.text-fade-in-left').addClass('text-fade-in-left-go');
 });
