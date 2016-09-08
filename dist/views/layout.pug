@@ -21,6 +21,7 @@ html(lang='en')
 				img(src="/images/dapperclothing.jpg")
 		div
 			.page-content
+
 				header(class="fixed")
 					nav(id='nav').overlay
 						ul.header-ul
@@ -45,15 +46,17 @@ html(lang='en')
 									div
 									| Gallery
 							li.header-links
-								a(href='#contactModal') 
+								a(href='#text') 
 									div
-										| Contact
-	#contactModal.modalDialog
-		div
-			a.close(href='#close', title='Close') X
-			h2 Modal Box
-			p This is a sample modal box that can be created using the powers of CSS3.
-			p
-			| You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.
-		main
-		block content
+										| Contact Modal
+
+				#text.lightbox
+					.box
+						a.close(href='#') X
+						p.title
+							h4 My Title
+					.content
+						p My content is great. here it is. read it and weep.
+
+				main
+				block content
