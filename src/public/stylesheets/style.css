@@ -107,6 +107,17 @@ h1 {
   color: white;
 }
 
+.about-title {
+  font-family: 'great_vibesregular';
+  font-size: 60px;
+}
+
+.about-content {
+  font-family: 'ralewayregular';
+  font-size: 20px;
+  font-weight: bold;
+}
+
 header {
   display: block;
   position: fixed;
@@ -120,10 +131,10 @@ header > nav {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
 }
 
-header > nav, main {
+/*header > nav, main {
   max-width: 1200px;
   margin: 0 auto;
-}
+}*/
 
 
 .header-ul {
@@ -210,9 +221,15 @@ header>nav>ul>li>a:hover {
     }
 }
 
+.clear-list {
+  list-style: none;
+  padding-top: 20px;
+}
+
 .white-box {
+  height: 400px;
   background-color: #fff;
-  padding: 3em;
+  text-align: center;
 }
 
 .text-fade-in {
@@ -233,7 +250,7 @@ header>nav>ul>li>a:hover {
 .page-content{
   position: relative;
   z-index: 1;
-  padding-top: 115px;
+  padding-top: 50px;
 }
 
 .fixed {
@@ -269,11 +286,6 @@ section.dapper {
   background-repeat: no-repeat;
 }
 
-.page-content {
-  position: relative;
-  z-index: 1;
-  padding-top: 115px;
-}
 
 .parallax-background{
   position: fixed;
@@ -308,12 +320,6 @@ section.dapper {
   padding-right: 50px;
 }
 
-
-.page-content{
-  position: relative;
-  z-index: 1;
-  padding-top: 115px;
-}
 
 /*.parallax-section {
   height: 800px;
@@ -373,12 +379,6 @@ body.about-page {
   background-attachment: fixed;
   background-size: cover;
   background-position: 100% auto;
-}
-
-.page-content {
-  position: relative;
-  z-index: 1;
-  padding-top: 115px;
 }
 
 .gallery{

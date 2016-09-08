@@ -128,7 +128,7 @@ $(() => {
 $(() => {
 
   const humanizedTimeout = function(){
-    let max = 200, min = 50;
+    let max = 100, min = 40;
     return Math.random() * (max - min) + min;
   }
 
