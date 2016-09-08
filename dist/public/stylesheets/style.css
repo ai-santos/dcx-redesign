@@ -89,27 +89,53 @@ body {
     min-height: 100%;
 }
 
-
-/*NAV*/
-
-/*#nav {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.87);
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-}
-*/
-
 h1 {
   font-family: 'great_vibesregular';
   font-size: 75px;
   color: white;
+  text-align: center;
+  text-shadow: 4px 2px black;
 }
 
-.about-title {
+h2.about-title {
+  font-family: 'great_vibesregular';
+  font-size: 30px;
+}
+
+section.about-section {
+  height: 500px;
+  position: relative;
+}
+section.about-section * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.about-section-text {
   font-family: 'great_vibesregular';
   font-size: 60px;
+  text-align: center;
+  line-height: 500px;
+  transition: opacity 1s;
+  transition-delay: 1s;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.about-section-background{
+  opacity: 0;
+  transition: opacity 1s;
+  transition-delay: 2s;
+  background-image: url('/images/dcx-thecrew.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
 }
 
 .about-content {
@@ -123,6 +149,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  background-color: rgba(0,0,0,0.75);
 }
 
 header > nav {
@@ -238,6 +265,7 @@ header>nav>ul>li>a:hover {
   height: 400px;
   background-color: #fff;
   text-align: center;
+  overflow: hidden;
 }
 
 .text-fade-in {
@@ -247,18 +275,34 @@ header>nav>ul>li>a:hover {
 
 }
 
-.text-fade-in-left {
-  color: black;
-  position: relative;
-  margin-left: auto;
-  opacity: 0.3;
+.text-fade-in-and-out {
+  color: #fff;
+  opacity: 1;
+  text-align: center;
 }
 
+.text-fade-in-left {
+  font-family: 'great_vibesregular';
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  padding-top: 50px;
+  transition: left 2s, opacity 2s;
+}
+
+.text-fade-in-left-go {
+  left: 0;
+  opacity: 1;
+}
 
 .page-content{
   position: relative;
   z-index: 1;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .fixed {
@@ -321,6 +365,15 @@ section.dapper {
 
 .flexbox-grid * {
   text-align: center;
+}
+
+.flexbox-grid-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: -500px;
+  margin: 0px;
 }
 
 
@@ -436,6 +489,10 @@ body.about-page {
   width: 200px;
 }
 
+.typing-text{
+  margin: 0;
+  padding: 0;
+}
 .typing-text > li > span {
   visibility: hidden;
 }
