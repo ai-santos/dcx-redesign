@@ -238,6 +238,9 @@ header>nav>ul>li>a:hover {
   top: 0;
   left: 0;
   color:#333333;
+  -webkit-transition: all 0.50s ease-in-out;
+  -moz-transition: all 0.50s ease-in-out;
+  transition: all 0.50s ease-in-out;
 }
 
 .lightbox .box {

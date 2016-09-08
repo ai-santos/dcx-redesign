@@ -48,15 +48,22 @@ html(lang='en')
 							li.header-links
 								a(href='#text') 
 									div
-										| Contact Modal
+										| Connect
 
 				#text.lightbox
 					.box
 						a.close(href='#') X
 						p.title
 							h4 My Title
-					.content
-						p My content is great. here it is. read it and weep.
+						.content
+							form(role='form', novalidate='')
+								label(for='inpEmail') Email address
+									input#inpEmail(type='email', placeholder='Enter email')
+								label(for='inpEmail') Email address
+									input#inpEmail(type='email', placeholder='Enter email')
+								label(for='inpEmail') Email address
+									input#inpEmail(type='email', placeholder='Enter email')
+
 
 				main
 				block content
