@@ -14,180 +14,72 @@
 }
 
 @font-face {
-  font-family: 'ralewayitalic';
-  src: url('raleway-italic-webfont.woff2') format('woff2'),
-  url('raleway-italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ralewayitalic';
+    src: url('raleway-italic-webfont.woff2') format('woff2'),
+         url('raleway-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'ralewaylight';
-  src: url('/fonts/raleway-light-webfont.woff2') format('woff2'),
-  url('/fonts/raleway-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ralewaylight';
+    src: url('/fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('/fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'ralewayregular';
-  src: url('/fonts/raleway-regular-webfont.woff2') format('woff2'),
-  url('/fonts/raleway-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ralewayregular';
+    src: url('/fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('/fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand-BoldItalic';
-  src: url('/fonts/Quicksand-BoldItalic.otf') format('woff2'),
-  url('/fonts/greatvibes-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Quicksand-BoldItalic';
+    src: url('/fonts/Quicksand-BoldItalic.otf') format('woff2'),
+         url('/fonts/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'great_vibesregular';
-  src: url('/fonts/greatvibes-regular-webfont.woff2') format('woff2'),
-       url('/fonts/greatvibes-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'great_vibesregular';
+    src: url('/fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('/fonts/greatvibes-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
-/*media queries*/
-
-@media (min-width: 990px) {
-  header>nav>ul>li>a {
-      max-width: 500px;
-      font-size: 1.7rem;
-      line-height: 2rem;
-  }
-}
-
-/*GENERIC STYLES*/
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 100%;
-  height: auto !important;
-  height: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+    font-size: 100%;
+    height: auto !important;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
-
-body {
-  background: #f2f2f2;
-  color: #222;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.05em;
-  font-weight: 400;
-  height: auto !important;
-  height: 100%;
-  line-height: 1.6rem;
-  min-height: 100%;
-}
-
-header {
-  display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  background-color: rgba(255,255,255, 1);
-}
-
-header > nav {
-  background: linear-gradient(to left, rgba(54, 194, 182, 0) 0, rgba(62, 188, 207, 0) 100%);
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
-}
-
-.header-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: black;
-}
-
-.header-links {
-  flex: 0 1 auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  transition: all linear 0.1s;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.header-links:hover {
-    background: rgba(255, 255, 255, 1);
-}
-
-.header-links a+div {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0.96) 100%);
-  border-radius: 0 0 2px 2px;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, .05);
-  display: none;
-  font-size: 1rem;
-  position: relative;
-  width: 195px;
-}
-
-.header-links:hover a+div {
-    display: block;
-    color: black;
-}
-
-.header-links a+div>ul {
-  list-style-type: none;
-}
-
-
-.header-links a+div>ul>li>a {
-  color: rgba(255, 255, 255, 0);
-  display: block;
-  font-size: .75rem;
-  letter-spacing: 1.5px;
-  padding: .25rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  margin-right: 0;
-}
-
-.header-links a+div>ul>li:hover>a {
-  background-color: rgba(255, 255, 255, .15);
-  color: black;
-}
-
-
-header>nav>ul>li>a:hover {
-  color: black;
-}
-
-
 
 #footer {
   position:fixed;
   left:0px;
   bottom:0px;
-  height:30px;
+  height:70px;
   width:100%;
   background:#fff;
 }
@@ -210,7 +102,33 @@ header>nav>ul>li>a:hover {
 }
 
 
+/*GENERIC STYLES*/
 
+body {
+    background: #f2f2f2;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.05em;
+    font-weight: 400;
+    height: auto !important;
+    height: 100%;
+    line-height: 1.6rem;
+    min-height: 100%;
+}
+
+h1 {
+  font-family: 'great_vibesregular';
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 2px black;
+}
+
+h2.about-title {
+  font-family: 'great_vibesregular';
+  font-size: 50px;
+}
 
 section.about-section {
   height: 500px;
@@ -255,21 +173,20 @@ section.about-section * {
   font-family: 'Monserrat';
   font-size: 24px;
 }
-h1 {
-  font-family: 'great_vibesregular';
-  font-size: 75px;
-  color: white;
-  text-align: center;
-  text-shadow: 4px 2px black;
+
+header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255,255,255, 1);
 }
 
-h2.about-title {
-  font-family: 'great_vibesregular';
-  font-size: 50px;
+header > nav {
+  background: linear-gradient(to left, rgba(54, 194, 182, 0) 0, rgba(62, 188, 207, 0) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
 }
-
-
-
 
 .center {
   display: flex;
@@ -277,12 +194,97 @@ h2.about-title {
   align-items: center;
 }
 
-
 .logo-responsive {
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 0%;
 }
 
+.header-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.header-links {
+  flex: 0 1 auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all linear 0.1s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-links:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.header-links a+div {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0.96) 100%);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .05);
+    display: none;
+    font-size: 1rem;
+    position: relative;
+    width: 195px;
+}
+
+.header-links:hover a+div {
+    display: block;
+    color: black;
+}
+
+.header-links a+div>ul {
+  list-style-type: none;
+}
+
+.header-links a+div>ul>li>a {
+    color: rgba(255, 255, 255, 0);
+    display: block;
+    font-size: .75rem;
+    letter-spacing: 1.5px;
+    padding: .25rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin-right: 0;
+}
+
+.header-links a+div>ul>li:hover>a {
+    background-color: rgba(255, 255, 255, .15);
+    color: black;
+}
+
+header>nav>ul>li>a {
+    align-items: flex-start;
+    color: black;
+    display: flex;
+    font-size: 1.55rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    max-width: 130px;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    transition: all linear 0.1s;
+}
+
+header>nav>ul>li>a:hover {
+  color: black;
+}
+
+@media (min-width: 990px) {
+    header>nav>ul>li>a {
+        max-width: 500px;
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+}
 
 
 
