@@ -12,6 +12,7 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		//if lt IE 9
 			script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+		script(src="https://use.fontawesome.com/70202a8525.js")
 		script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js')
 		script(src='scripts/app.js')
 	body(class=bodyClass)
@@ -65,14 +66,10 @@ html(lang='en')
 								.modal-footer
 									button.btn.btn-default(type='button', data-dismiss='modal').btn.btn-default Close
 									button.btn.btn-primary(type='button').btn.btn-primary Save
-
-
-
 				main
 				block content
-				div.page-footer
-					p.muted.credit
-						| "Example courtesy"
-						a(href='http://asantos.io/') Aileen
-						|     " and "
-						a(href='https://www.google.com/') Francois
+				div#footer
+					p
+					| "Example courtesy"
+					a(href='http://asantos.io/') Aileen
+					a(href='https://www.google.com/') Francois

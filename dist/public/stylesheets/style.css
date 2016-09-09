@@ -75,10 +75,13 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-.page-footer {
-  background-color: white;
-  padding-top: 30px;
-  padding-bottom: 10px;
+#footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:70px;
+  width:100%;
+  background:#fff;
 }
 
 
@@ -223,7 +226,7 @@ header > nav {
     box-shadow: 0 3px 1px rgba(0, 0, 0, .05);
     display: none;
     font-size: 1rem;
-    position: absolute;
+    position: relative;
     width: 195px;
 }
 
