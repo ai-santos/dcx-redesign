@@ -167,7 +167,6 @@ $(function () {
 $(function () {
   var detectSectionScrollIn = function detectSectionScrollIn(event) {
     var section = $('section.about-section');
-    var offsetTop = section.offset().top - $(window).height() / 1;
     if (section.length === 0) return;
     var offsetTop = section.offset().top - $(window).height() / 2;
     if (window.scrollY >= offsetTop) {
