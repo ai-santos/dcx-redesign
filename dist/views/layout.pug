@@ -46,13 +46,13 @@ html(lang='en')
 									div
 									| Gallery
 							li.header-links
-								a(href='#text')
+								a(class='open-connect-modal' href='')
 									div
 										| Connect
 
-				#text.lightbox.fade
+				.modal.connect-modal
 					.box
-						a.close(href='#') X
+						a.close(class='close-connect-modal' href='') X
 						p.title Connect
 						.content
 							form(role='form', novalidate='')
