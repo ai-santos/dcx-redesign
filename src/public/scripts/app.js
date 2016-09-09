@@ -180,7 +180,7 @@ $(() => {
     detectSectionScrollIn();
     //
 
-    $('.text-fade-in').delay(700).animate({ opacity: 1}, 1000)
+    $('.text-fade-in').delay(700).animate({ opacity: 1}, 3000)
 
   })();
 
