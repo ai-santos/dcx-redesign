@@ -102,11 +102,11 @@ $(() => {
   }
   const transformForPosition = function(position){
     return ({
-      0: 'translateX(160px) translateY(31px) scale(.8)',
-      1: 'translateX(300px) translateY(31px) scale(1)',
-      2: 'translateX(500px) translateY(31px) scale(1.3)',
-      3: 'translateX(700px) translateY(31px) scale(1)',
-      4: 'translateX(860px) translateY(31px) scale(.8)',
+      0: 'translateX(0px) translateY(31px) scale(.8)',
+      1: 'translateX(140px) translateY(31px) scale(1)',
+      2: 'translateX(340px) translateY(31px) scale(1.3)',
+      3: 'translateX(540px) translateY(31px) scale(1)',
+      4: 'translateX(700px) translateY(31px) scale(.8)',
     })[position]
   }
   const visibleIndicies = function(totalNumberOfCells, numberOfVisibleCells, offset){
@@ -165,7 +165,7 @@ $(() => {
 $(() => {
   var detectSectionScrollIn = function(event) {
     var section = $('section.about-section');
-    var offsetTop = section.offset().top - ($(window).height()/2)
+    var offsetTop = section.offset().top - ($(window).height()/1)
     if (window.scrollY >= offsetTop){
       section.find('> .about-section-text').css({opacity: 0})
       section.find('> .about-section-background').css({opacity: 1})

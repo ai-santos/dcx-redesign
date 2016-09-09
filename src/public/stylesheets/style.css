@@ -363,10 +363,10 @@ header>nav>ul>li>a:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 
-.fade {
+/*.fade {
   transition: opacity .15s ease-in-out;
-  transform: translateX(100px) translateY(31px) scale(.6)',
-}
+  transform: translateX(100px) translateY(31px) scale(.6);
+}*/
 
 .lightbox .title {
   margin:0;
@@ -397,10 +397,16 @@ header>nav>ul>li>a:hover {
 .video-container {
   margin-top: 50px;
   padding-top: 10px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   text-align: center;
   background-color: #212121;
 }
+
+video {
+  height: auto;
+  width: 100%;
+  }
 
 .clear-list {
   list-style: none;
@@ -408,7 +414,8 @@ header>nav>ul>li>a:hover {
 }
 
 .white-box {
-  height: 400px;
+  padding: 20px;
+  min-height: 400px;
   background-color: #fff;
   text-align: center;
   overflow: hidden;
@@ -480,10 +487,16 @@ header>nav>ul>li>a:hover {
 
 section.motto {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 138px 0;
   background-color: #fff;
+  text-align: center;
+}
+
+section.motto > img {
+  margin-bottom: 20px;
 }
 
 section.whyVFix {
@@ -528,6 +541,7 @@ section.dapper {
   height: 500px;
   opacity: .8;
   background-color: #212121;
+  width: 100%;
 }
 
 .flexbox-grid * {
@@ -543,10 +557,9 @@ section.dapper {
   margin: 0px;
 }
 
-
-.service-item {
-  padding-right: 50px;
-}
+/*.service-item:not(:last-child) {
+  margin-right: 20px;
+}*/
 
 .gallery{
   background-color: black;
@@ -577,8 +590,48 @@ section.dapper {
 .gallery > .gallery-filmstrip{
   position: relative;
   height: 280px;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
+  width: 900px;
+  right: 300px;
+  transform: scale(0.3);
 }
+@media (min-width: 300px) {
+  .gallery > .gallery-filmstrip{
+    right: 251px;
+    transform: scale(0.4);
+  }
+}
+@media (min-width: 500px) {
+  .gallery > .gallery-filmstrip{
+    right: 205px
+    transform: scale(0.5);
+  }
+}
+@media (min-width: 600px) {
+  .gallery > .gallery-filmstrip{
+    right: 120px;
+    transform: scale(0.6);
+  }
+}
+@media (min-width: 700px) {
+  .gallery > .gallery-filmstrip{
+    right: 100px;
+    transform: scale(0.7);
+    }
+}
+@media (min-width: 800px) {
+  .gallery > .gallery-filmstrip{
+    right: 10px;
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 900px) {
+  .gallery > .gallery-filmstrip{
+    right: 0;
+    transform: scale(0.9);
+  }
+}
+
 
 .gallery > .gallery-filmstrip > *{
   position: absolute;
