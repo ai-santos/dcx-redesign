@@ -14,15 +14,15 @@ We will be redesigning an existing local fashion store site (http://laurlf011.wi
 
 ## Specifications
 
-- [ ] Site has at least 3 pages.
-- [ ] Site is _not_ published on the web, and can be viewed locally on a browser.
-- [ ] All links work correctly (i.e. no broken links).
-- [ ] All images and other external resources load correctly.
-- [ ] External resources used are properly cited.
-- [ ] Transpile into Babel ES6.
-- [ ] Use express routing.
-- [ ] Implement some form of video to the site. 
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [x] Site has at least 3 pages.
+- [x] Site is _not_ published on the web, and can be viewed locally on a browser.
+- [x] All links work correctly (i.e. no broken links).
+- [x] All images and other external resources load correctly.
+- [x] External resources used are properly cited.
+- [x] Transpile into Babel ES6.
+- [x] Use express routing.
+- [x] Implement some form of video to the site. 
+- [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
 
