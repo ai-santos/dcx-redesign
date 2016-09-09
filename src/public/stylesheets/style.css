@@ -127,6 +127,7 @@ section.about-section {
   height: 500px;
   position: relative;
 }
+
 section.about-section * {
   position: absolute;
   top: 0;
@@ -136,6 +137,7 @@ section.about-section * {
   height: 100%;
   width: 100%;
 }
+
 .about-section-text {
   font-family: 'great_vibesregular';
   font-size: 60px;
@@ -148,6 +150,7 @@ section.about-section * {
   padding: 0;
   color: #fff;
 }
+
 .about-section-background{
   opacity: 0;
   transition: opacity 1s;
@@ -169,7 +172,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255,255,255, 1);
 }
 
 header > nav {
@@ -590,7 +593,7 @@ section.dapper {
 }*/
 
 .gallery{
-  background-color: black;
+  background-color: rgba(38,34,21,.9)
 }
 
 .gallery > .gallery-main{
@@ -605,6 +608,7 @@ section.dapper {
   bottom: 0;
   right: 0;
   left: 0;
+  height: 1900px;
 }
 
 .gallery > .gallery-main > .gallery-main-image > img {
