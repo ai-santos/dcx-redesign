@@ -1,5 +1,8 @@
 $(() => {
 
+//modal
+
+
 //CAROUSEL
   const isBefore = function(index, visibleCells, cellsLength){
     let beforeFirstIndex = visibleCells[0]-1
@@ -19,7 +22,6 @@ $(() => {
     const cells = filmstrip.children()
     if (offset < 0) offset += cells.length
     const visibleCells = visibleIndicies(cells.length, numberOfCells, offset)
-    console.log('visibleCells', visibleCells)
     if (animate){
       filmstrip.addClass('gallery-filmstrip-animated')
     }else{
@@ -76,6 +78,7 @@ $(() => {
   }
 
   const initializeGallery = function() {
+    if ($('.gallery-filmstrip').length === 0) return;
     positionGalleryFilmstrip(0, false)
 
     $('.gallery-filmstrip > *').on('click', function(event) {
@@ -165,6 +168,7 @@ $(() => {
 $(() => {
   var detectSectionScrollIn = function(event) {
     var section = $('section.about-section');
+    if (section.length === 0) return;
     var offsetTop = section.offset().top - ($(window).height()/2)
     if (window.scrollY >= offsetTop){
       section.find('> .about-section-text').css({opacity: 0})
@@ -197,5 +201,14 @@ $(() => {
 $(() => {
 
   $('.text-fade-in-left-add').addClass('text-fade-in-left-add-go')
+  $('.open-connect-modal').on('click', function (event) {
+    event.preventDefault()
+    $('.connect-modal').addClass('modal-open')
+  })
+
+   $('.close-connect-modal').on('click', function (event) {
+    event.preventDefault()
+    $('.connect-modal').removeClass('modal-open')
+  })
 
 })
