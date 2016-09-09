@@ -84,6 +84,10 @@ html {
   background:#fff;
 }
 
+#footer p {
+  text-align: center;
+}
+
 
 .clear {
     display: block;
