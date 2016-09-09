@@ -75,6 +75,13 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
+.page-footer {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
 .clear {
     display: block;
 }
@@ -162,7 +169,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(255,255,255,0.95);
 }
 
 header > nav {
@@ -171,11 +178,16 @@ header > nav {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
 }
 
-/*header > nav, main {
-  max-width: 1200px;
-  margin: 0 auto;
-}*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.logo-responsive {
+  width: 60%;
+  height: 60%;
+}
 
 .header-ul {
     display: flex;
@@ -188,11 +200,14 @@ header > nav {
 }
 
 .header-links {
-    flex: 0 1 auto;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    transition: all linear 0.1s;
+  flex: 0 1 auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all linear 0.1s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .header-links:hover {
@@ -215,7 +230,7 @@ header > nav {
 }
 
 .header-links a+div>ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .header-links a+div>ul>li>a {
@@ -227,6 +242,7 @@ header > nav {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+    margin-right: 0;
 }
 
 .header-links a+div>ul>li:hover>a {
@@ -236,7 +252,7 @@ header > nav {
 
 header>nav>ul>li>a {
     align-items: flex-start;
-    color: #fff;
+    color: black;
     display: flex;
     font-size: 1.55rem;
     font-weight: 200;
@@ -615,7 +631,7 @@ section.dapper {
 }
 @media (min-width: 500px) {
   .gallery > .gallery-filmstrip{
-    right: 205px
+    right: 205px;
     transform: scale(0.5);
   }
 }
