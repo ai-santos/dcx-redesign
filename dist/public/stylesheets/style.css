@@ -434,6 +434,7 @@ header>nav>ul>li>a:hover {
   color:#858585;
 }
 
+
 .video-container {
   margin-top: 50px;
   padding-top: 10px;
@@ -444,7 +445,7 @@ header>nav>ul>li>a:hover {
 }
 
 video {
-  margin-top: -100px;
+  margin-top: -140px;
   height: auto;
   width: 100%;
   }
@@ -463,6 +464,7 @@ video {
 }
 
 .text-fade-in {
+  padding-top: 100px;
   color: #fff;
   opacity: 0;
   text-align: center;
@@ -486,10 +488,10 @@ video {
   color: white;
   text-align: center;
   text-shadow: 2px 2px black;
-  position: relative;
+  position: absolute;
   left: -100%;
   opacity: 0;
-  padding-top: 50px;
+  padding-top: 0px;
   transition: left 2s, opacity 2s;
 }
 
