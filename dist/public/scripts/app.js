@@ -194,6 +194,7 @@ $(function () {
     //
 
     $('.text-fade-in').delay(700).animate({ opacity: 1 }, 3000);
+    $('.text-fade-in-left-add').addClass('text-fade-in-left-add-go');
   })();
 
   ;(function () {
@@ -202,8 +203,6 @@ $(function () {
     });
 
     $('.text-fade-in-left').addClass('text-fade-in-left-go');
-
-    $('.text-fade-in-left-add').addClass('text-fade-in-left-add-go');
   })();
 
   // modal
