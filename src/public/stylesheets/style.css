@@ -174,12 +174,20 @@ section.about-section * {
   font-size: 24px;
 }
 
+.shrink {
+  padding: 20px 0;
+}
+
 header {
   display: block;
   position: fixed;
   width: 100%;
   z-index: 1000;
   background-color: rgba(255,255,255, 1);
+    /* animation magic */
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out; 
+  z-index: 9999;
 }
 
 header > nav {
