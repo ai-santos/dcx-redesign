@@ -164,6 +164,18 @@ $(function () {
     tick();
   })();
 
+  //shrinking header
+  ;(function () {
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 10) {
+        $('header').addClass('shrink');
+      } else {
+        $('header').removeClass('shrink');
+      }
+    });
+  })();
+
   // start animation when you scroll over stuff
   ;(function () {
     var detectSectionScrollIn = function detectSectionScrollIn(event) {
@@ -184,13 +196,15 @@ $(function () {
     $('.text-fade-in').delay(700).animate({ opacity: 1 }, 3000);
   })();
 
-  $('.text-fade-in-and-out').fadeIn(3000, function () {
-    $('.text-fade-in-and-out').fadeOut(5000);
-  });
+  ;(function () {
+    $('.text-fade-in-and-out').fadeIn(3000, function () {
+      $('.text-fade-in-and-out').fadeOut(5000);
+    });
 
-  $('.text-fade-in-left').addClass('text-fade-in-left-go');
+    $('.text-fade-in-left').addClass('text-fade-in-left-go');
 
-  $('.text-fade-in-left-add').addClass('text-fade-in-left-add-go');
+    $('.text-fade-in-left-add').addClass('text-fade-in-left-add-go');
+  })();
 
   // modal
   ;(function () {

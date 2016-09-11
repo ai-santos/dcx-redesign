@@ -75,18 +75,18 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-#footer {
+/* #footer {
   position:fixed;
   left:0px;
   bottom:0px;
-  height:70px;
+  height:35px;
   width:100%;
   background:#fff;
 }
 
 #footer p {
   text-align: center;
-}
+} */
 
 
 .clear {
@@ -174,12 +174,19 @@ section.about-section * {
   font-size: 24px;
 }
 
+.shrink {
+  padding-top: 5px;
+}
+
 header {
-  display: block;
+  display: block; 
   position: fixed;
+  top: 0;
+  padding-top: 30px;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   background-color: rgba(255,255,255, 1);
+  -webkit-transition: all 0.4s ease-in-out;
 }
 
 header > nav {
@@ -188,36 +195,31 @@ header > nav {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .5);
 }
 
-.center {
+/* .center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.logo-responsive {
+/* .logo-responsive {
   width: 60%;
   height: 0%;
-}
+} */
 
 .header-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: black;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: black;
 }
 
 .header-links {
-  flex: 0 1 auto;
   margin: 0;
   padding: 0;
   position: relative;
   transition: all linear 0.1s;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 .header-links:hover {
@@ -442,6 +444,7 @@ header>nav>ul>li>a:hover {
 }
 
 video {
+  margin-top: -100px;
   height: auto;
   width: 100%;
   }
@@ -492,9 +495,9 @@ video {
 
 .text-fade-in-left-add {
   font-family: 'ralewayregular';
-  font-size: 30px;
+  font-size: 19px;
   color: black;
-  text-align: left;
+  text-align: center;
   position: relative;
   left: -100%;
   opacity: 0;
@@ -600,7 +603,8 @@ section.dapper {
 }*/
 
 .gallery{
-  background-color: rgba(38,34,21,.9)
+  background-color: rgba(38,34,21,.9);
+  margin-top: -100px;
 }
 
 .gallery > .gallery-main{
