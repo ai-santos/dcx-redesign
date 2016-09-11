@@ -23,13 +23,13 @@ html(lang='en')
 		div
 			.page-content
 
-				header(class="fixed")
-					nav(id='nav').center
+				header
+					nav(id='nav')
 						ul.header-ul
 							li.header-links
 								a(href='/')
-									div.center
-										img.logo-responsive(src='http://i.imgur.com/fgIAjqbt.jpg')
+									div
+									| Home
 							li.header-links
 								a(href='/about')
 									div
@@ -68,5 +68,5 @@ html(lang='en')
 									button.btn.btn-primary(type='button').btn.btn-primary Save
 				main
 				block content
-				div#footer
+				//- div#footer
 
