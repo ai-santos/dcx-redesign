@@ -201,7 +201,7 @@ $(function () {
     $('.text-fade-in-and-out').fadeIn(3000, function () {
       $('.text-fade-in-and-out').fadeOut(5000);
     });
-
+    $('.text-fade-in').delay(700).animate({ opacity: 1 }, 3000);
     $('.text-fade-in-left').addClass('text-fade-in-left-go');
   })();
 

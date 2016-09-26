@@ -145,6 +145,18 @@ section.about-section * {
   width: 100%;
 }
 
+.index-section-motto1, .index-section-motto2, .index-section-motto3 {
+  font-family: 'great_vibesregular';
+  font-size: 60px;
+  transition: opacity 1s;
+  transition-delay: 2s;
+  opacity:  1;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+
 .about-section-text {
   font-family: 'great_vibesregular';
   font-size: 60px;
@@ -463,10 +475,10 @@ video {
   overflow: hidden;
 }
 
+.motto1
 .text-fade-in {
-  padding-top: 100px;
   color: #fff;
-  opacity: 0;
+  opacity: 1;
   text-align: center;
 }
 
@@ -528,6 +540,7 @@ video {
   position: fixed;
 }
 
+
 section.motto {
   display: flex;
   flex-direction: row;
@@ -576,7 +589,7 @@ section.dapper {
   object-fit: cover;
 }
 
-.flexbox-grid {
+.flexbox-grid-motto1, .flexbox-grid-motto2, .flexbox-grid-motto3 {
   display: flex;
   margin: 0px;
   justify-content: center;
@@ -585,10 +598,6 @@ section.dapper {
   opacity: .8;
   background-color: #212121;
   width: 100%;
-}
-
-.flexbox-grid * {
-  text-align: center;
 }
 
 .flexbox-grid-image {
