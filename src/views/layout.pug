@@ -51,22 +51,9 @@ html(lang='en')
 									div
 										| Connect
 
-				.modal.connect-modal
-					.box
-						a.close(class='close-connect-modal' href='') X
-						p.title Connect
-						.content
-							form(role='form', novalidate='')
-								.form-group
-									label(for='inpEmail').label Name
-										input#name(type='Name', placeholder='Your Name').form-control
-								.form-group
-									label(for='inpEmail').label Email address
-										input#inpEmail(type='email', placeholder='Enter email').form-control
-								.modal-footer
-									button.btn.btn-default(type='button', data-dismiss='modal').btn.btn-default Close
-									button.btn.btn-primary(type='button').btn.btn-primary Save
 				main
 				block content
+				block modal
+					include connect.pug
 				//- div#footer
 
