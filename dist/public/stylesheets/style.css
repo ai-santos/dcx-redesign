@@ -195,7 +195,7 @@ section.about-section * {
   opacity: 0;
   transition: opacity 1s;
   transition-delay: 2s;
-  background-image: url('/images/dcx-thecrew.jpg');
+  background-image: url('/images/thecrewblurb.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
