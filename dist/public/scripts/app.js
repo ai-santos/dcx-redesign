@@ -1,6 +1,6 @@
 'use strict';
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 $(function () {
 
@@ -20,7 +20,7 @@ $(function () {
     };
 
     var positionGalleryFilmstrip = function positionGalleryFilmstrip(offset) {
-      var animate = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
+      var animate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
       var filmstrip = $('.gallery-filmstrip');
       var numberOfCells = 5;
