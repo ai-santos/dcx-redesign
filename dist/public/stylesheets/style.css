@@ -88,7 +88,6 @@ html {
   text-align: center;
 } */
 
-
 .clear {
     display: block;
 }
@@ -118,9 +117,9 @@ body {
 }
 
 .intro {
+  display: flex;
   color: #000;
-  margin-top: 200px;
-  padding-left: 200px;
+  align-items: center;
 }
 
 .intro h1 {
@@ -321,7 +320,11 @@ header>nav>ul>li>a:hover {
     }
 }
 
-
+@media (max-width: 500px) {
+    body {
+        background-color:red;
+    }
+}
 
 
 .btn-default {
